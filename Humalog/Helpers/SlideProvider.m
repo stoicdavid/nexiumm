@@ -31,7 +31,7 @@
         documentAnnotations = [NSMutableDictionary dictionary];
                 
         categoriesAndIndices = [NSArray arrayWithObjects:
-                                [NSValue valueWithRange:NSMakeRange(0, 3)],  // Erge
+                                [NSValue valueWithRange:NSMakeRange(1, 2)],  // Erge
                                 [NSValue valueWithRange:NSMakeRange(3, 2)],  // Alivio
                                 [NSValue valueWithRange:NSMakeRange(5, 2)],  // Control
                                 [NSValue valueWithRange:NSMakeRange(7, 2)],  // Curación

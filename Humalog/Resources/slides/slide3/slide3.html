@@ -1,33 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" />
-	<meta name="viewport" content="user-scalable=yes, width=1024" />
-	<title>slide3</title>
-	<style>
-		body {
-			background-color: #FFFFFF;
-			margin: 0px;
-		}
-	</style>
-	
-  </head>
-  <body>
-	<div style ="margin:auto;width:1024px">
+<!DOCTYPE html> 
+<html> 
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Reflujo y ERGE</title>
+		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="js/jquery.delay.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/estilos.css" type="text/css" rel="stylesheet"><link>		
+	<script type="text/javascript">
+		$(window).load(function() {
+			//animación para en fondo del header
+			
+			$("#headerB").fadeIn("slow")
+			
+			$(this).delay(1000, function() {
+				
+				
+				$("#slide2Titulo").stop().animate({
+					left : '50px'
+				}, {
+					queue : false,
+					duration : 1000,
+					easing : 'easeOutBack'
+				});
+				$("#slide2Titulo").fadeIn("slow")
+			});
+			
+			$(this).delay(1500, function() {
+			
+			$("#slide2Texto1 img").stop().animate({
+					top : '0px'
+				}, {
+					queue : false,
+					duration : 1000,
+					easing : 'easeOutBack'
+				});
+				$("#slide2Texto1 img").fadeIn("slow")
+			});
+			
+			$(this).delay(2500, function() {
+			
+			$("#slide2Texto2 img").stop().animate({
+					top : '0px'
+				}, {
+					queue : false,
+					duration : 1000,
+					easing : 'easeOutBack'
+				});
+				$("#slide2Texto2 img").fadeIn("slow")
+			});
+			
+			$(this).delay(3000, function() {
+			
+			$("#slide2Cuadro").stop().animate({
+					left : '525px'
+				}, {
+					queue : false,
+					duration : 1000,
+					easing : 'easeOutBack'
+				});
+				$("#slide2Cuadro").fadeIn("slow")
+			});
+			
+			
+			
+			$(this).delay(3500, function() {
+				$("#slide2Grafica").fadeIn("slow");
+			});
+			
+			$(this).delay(4500, function() {
+				$("#slide2GraficaB").fadeIn("slow");
+			});
+			
+			$(this).delay(5500, function() {
+				$("#slide2GraficaC").fadeIn("slow");
+			});
+			
+			$(this).delay(6500, function() {
+				$("#slide2GraficaD").fadeIn("slow");
+			});
+			
+		});
 
+	</script>
+	</head>
+	<body id="slide2">
+		<div id="content">
+			
+				
+					<div id="headerB"><img src="images/headerB_av2.jpg" alt="pleca"></div>
+				
+				<div id="slide2Titulo"><img src="images/slide2Titulo.jpg" alt="titulo"></div>
+				<div id="slide2Texto1"><img src="images/slide2Texto1.jpg" alt="texto"></div>
+				<div id="slide2Texto2"><img src="images/slide2Texto2.jpg" alt="texto"></div>
+				<div id="slide2Cuadro"><img src="images/slide2Cuadro.png" alt="cuadro"></div>
+				<div id="slide2Grafica">
+					
+					<img src="images/slide2GraficaB.png" id="slide2GraficaB">
+					<img src="images/slide2GraficaC.png" id="slide2GraficaC">
+					<img src="images/slide2GraficaD.png" id="slide2GraficaD">
+					<img src="images/slide2Grafica.jpg" alt="grafica" >
+				</div>
+				
+		</div>
+		
 
-	
-	<!-- copy these lines to your document: -->
-
-	<div id="slide3_hype_container" style="position:relative;overflow:hidden;width:1024px;height:668px;">
-		<script type="text/javascript" charset="utf-8" src="slide3_Resources/slide3_hype_generated_script.js?95511"></script>
-	</div>
-
-	<!-- end copy -->
-	
-
-
-	</div>
-  </body>
+	</body>
 </html>

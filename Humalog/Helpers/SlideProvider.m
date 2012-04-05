@@ -31,11 +31,11 @@
         documentAnnotations = [NSMutableDictionary dictionary];
                 
         categoriesAndIndices = [NSArray arrayWithObjects:
-                                [NSValue valueWithRange:NSMakeRange(0, 2)],  // Erge
-                                [NSValue valueWithRange:NSMakeRange(2, 2)],  // Alivio
-                                [NSValue valueWithRange:NSMakeRange(4, 2)],  // Control
-                                [NSValue valueWithRange:NSMakeRange(6, 2)],  // Curación
-                                [NSValue valueWithRange:NSMakeRange(8, 2)], // Mantenimiento
+                                [NSValue valueWithRange:NSMakeRange(0, 3)],  // Erge
+                                [NSValue valueWithRange:NSMakeRange(3, 2)],  // Alivio
+                                [NSValue valueWithRange:NSMakeRange(5, 2)],  // Control
+                                [NSValue valueWithRange:NSMakeRange(7, 2)],  // Curación
+                                [NSValue valueWithRange:NSMakeRange(9, 2)], // Mantenimiento
                                 nil];
     }
     return self;
@@ -43,7 +43,7 @@
 
 - (NSUInteger)numberOfDocuments
 {
-    return 11;
+    return 13;
 }
 
 - (UIView<ContentControlProtocol> *)viewForDocumentAtIndex:(NSUInteger)index

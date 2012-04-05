@@ -1,0 +1,650 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body#apertura {
+	background: url("../images/bgApertura.jpg") no-repeat 0 0;	
+}
+
+#content{
+	width:1024px;
+	height:768px;
+	position: absolute;
+}
+
+
+/*
+ Apertura
+ */
+
+#mano{
+	left:276px;
+	top:200px;
+	position: absolute;
+	display: none;
+}
+
+#pluma{
+	left:276px;
+	top:0px;
+	position: absolute;
+	display: none;
+}
+
+#headerApertura{
+	width:1024px;
+	height:340px;
+	position: absolute;
+	top:0;
+	background:url("../images/headerApertura.png") no-repeat 0 0;
+	display:none;
+}
+
+#textoIntro{
+	display:none;
+	top:64px;
+	left:158px;
+	position: absolute;
+}
+
+#textoSoloUsted{
+	display:none;
+	top:112px;
+	left:195px;
+	position: absolute;
+}
+
+#textoUnaPluma{
+	top:510px;
+	display: none;
+	left:255px;
+	position: absolute;
+}
+/*Fin apertura*/
+
+/*Headers*/
+	#headerA{
+		position:absolute;
+		top:0;
+		left:0;
+		width:1024px;
+		height:210px;
+		display:none;
+	}
+	
+	#headerB{
+		position:absolute;
+		top:0;
+		left:0;
+		width:1024px;
+		height:110px;
+		display:none;
+	}
+/*fin Headers*/
+
+/*Slide1*/
+	
+body#slide1{
+	background:#FFF;
+}
+
+#slide1Cuadro{
+	top:235px;
+	left:30px;
+	position: absolute;
+	display:none;
+	z-index:20;
+}
+
+#slide1Grafica{
+	top:100px;
+	right:0px;
+	z-index: 25;
+	position:absolute;
+	display: none;
+}
+
+#slide1Grafica img{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+#GraficaB{
+	z-index:20;
+}
+
+#GraficaC{
+	z-index:25;
+}
+
+#GraficaD{
+	z-index:30;
+}
+
+#slide1Texto{
+	left:33px;
+	top:366px;
+	position:absolute;
+	overflow:hidden;
+	width:425px;
+	height:168px;
+}
+
+#slide1Texto img{
+	position:absolute;
+	top:-30px;
+	display:none;
+}
+/*Fin Slide !*/
+
+
+/*Slide2*/
+	
+body#slide2{
+	background:#FFF;
+}
+
+#slide2Titulo{
+	left:80px;
+	top:109px;
+	position: absolute;
+	display: none;
+}
+
+#slide2Cuadro{
+	top:125px;
+	left:515px;
+	position: absolute;
+	display:none;
+	z-index:20;
+}
+
+#slide2Grafica{
+	top:280px;
+	right:0;
+	z-index: 25;
+	position:absolute;
+	display: none;
+}
+
+#slide2Grafica img{
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+#slide2GraficaB{
+	z-index: 20;
+	display: none;
+}
+
+#slide2GraficaC{
+	z-index: 25;
+	display: none;
+}
+
+#slide2GraficaD{
+	z-index: 50;
+	display: none;
+}
+
+#slide2Texto1{
+	left:50px;
+	top:155px;
+	position:absolute;
+	overflow:hidden;
+	width:375px;
+	height:203px;
+}
+
+	#slide2Texto1 img{
+		top: -30px;
+		position: absolute;
+		display:none;
+	}
+
+#slide2Texto2{
+	left:50px;
+	top:468px;
+	position:absolute;
+	overflow:hidden;
+	width:415px;
+	height:143px;
+}
+
+#slide2Texto2 img{
+	position:absolute;
+	top:-30px;
+	display:none;
+}
+/*Fin Slide 2*/
+
+/*Slide 3*/
+body#slide3{
+	background: url("../images/slide3Bg.jpg") no-repeat 0 0;
+}
+
+#slide3Header{
+	display:none;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 1024px;
+	height:210px;
+}
+
+#slide3Logo{
+	top:40px;
+	left:680px;
+	display:none;
+	position:absolute;
+}
+
+#slide3Texto1{
+	top:225px;
+	left:235px;
+	position: absolute;
+	display: none;
+}
+
+#slide3Texto2{
+	top:585px;
+	left:310px;
+	position: absolute;
+	display:none;										
+}
+/*Fin Slide 3*/
+
+/*Slide 4*/
+
+#slide4Cuadro{
+	top:117px;
+	position: absolute;
+	left:0;
+	display:none;
+}
+
+#slide4Texto{
+	top:345px;
+	position:absolute;
+	left:18px;
+	width:435px;
+	height:116px;
+}
+
+#slide4Texto img{
+	position: absolute;
+	top:-30px;
+	display:none;
+}
+#slide4Grafica{
+	right:0;
+	top:73px;
+	position:absolute;
+	display:none;
+}
+
+#slide4Grafica img{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+#slide4FondoGrafica{
+	z-index: 1;
+}
+
+#slide4BotonA{
+	z-index: 50;
+}
+
+#slide4BotonB{
+	z-index: 40;
+}
+
+#slide4Comp{
+	z-index: 2;
+}
+
+#slide4Nexium{
+	z-index: 3;
+}
+/*Fin Slide 4*/
+
+/*Slide 5*/
+body#slide5 #HeaderB{
+	z-index:0;
+}
+
+#slide5Cuadro{
+	top:55px;
+	left:285px;
+	position: absolute;
+	z-index:10;
+	display:none;
+}
+
+#slide5Texto{
+	width:400px;
+	height:111px;
+	position: absolute;
+	top:333px;
+	left:0;
+	z-index:20;
+}
+
+#slide5Texto img{
+	top:-30px;
+	position:absolute;
+	display:none;
+}
+
+#slide5Grafica{
+	left:235px;
+	top:194px;
+	position: absolute;
+	display:none;
+	z-index:5;
+	background:url("../images/slide5Grafica.jpg");
+	width:800px;
+	height:456px;
+}
+
+#barraA{
+	border-top:#FFF solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#FFF solid 1px;
+	box-shadow: 0 0 5px #888;
+	width:69px;
+	height:0px;
+	position:absolute;
+	left:321px;
+	bottom:45px;
+	z-index:10;
+	background:#331263 url("../images/barraAbg.jpg") repeat-x 0 50%;
+}
+
+#botonA{
+	position: absolute;
+	right:38px;
+	bottom: 10px;
+	z-index: 40;
+}
+
+#botonB{
+	position: absolute;
+	right:38px;
+	bottom: 10px;
+	z-index: 50;
+}
+
+#barraAcomp{
+	height:0px; /*119px*/
+	width:68px;
+	background:#bcbdc0;
+	border-top:#dedee0 solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#eeefef solid 1px;
+	position: absolute;
+	left:390px;
+	bottom:45px;
+	z-index: 5;
+}
+
+#barraB{
+	border-top:#FFF solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#FFF solid 1px;
+	box-shadow: 0 0 5px #888;
+	width:69px;
+	height:0px;
+	position:absolute;
+	left:491px;
+	bottom:45px;
+	z-index:10;
+	background:#331263 url("../images/barraBbg.jpg") repeat-x 0 50%;
+}
+
+#barraBcomp{
+	height:0px; /*119px*/
+	width:68px;
+	background:#bcbdc0;
+	border-top:#dedee0 solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#eeefef solid 1px;
+	position: absolute;
+	left:562px;
+	bottom:45px;
+	z-index: 5;
+}
+
+#TextoGrafica{
+	right:47px;
+	bottom:96px;
+	position: absolute;
+	display:none;
+}
+
+#barraA img, #barraB img{
+	position:absolute;top:-13px; left:50%; margin-left:-11px;
+	display: none;
+}
+/*Fin Slide 5*/
+
+/*Slide 6*/
+
+#slide6Logo{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	}
+
+#slide6Texto1{
+	position: absolute;
+	left:30px;
+	top:208px;
+	display:none;
+}
+
+#slide6Texto2{
+	position: absolute;
+	top:408px;
+	left:30px;
+	display:none;
+}
+
+#slide6Texto3{
+	position:absolute;
+	top:524px;
+	left:30px;
+	display:none;
+}
+
+#slide6Cuadro{
+	position:absolute;
+	top:81px;
+	right: -30px;
+	display:none;
+	z-index: 20;
+}
+
+#slide6Grafica{
+	position:absolute;
+	top:217px;
+	right: 0;
+	z-index: 21;
+	display:none;
+}
+#slide6Grafica img{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+#slide6FondoGrafica{
+	z-index: 1;
+}
+
+#slide6BotonA{
+	z-index: 50;
+}
+
+#slide6BotonB{
+	z-index: 40;
+}
+
+#slide6Comp{
+	z-index: 2;
+}
+
+#slide6Nexium{
+	z-index: 3;
+}
+/*Fin Slide 6*/
+
+
+/*Slide 8*/
+#slide8Titulo{
+	position:absolute;
+	left:193px;
+	top:80px;
+	display:none;
+}
+#slide8Cuadro{
+	top:230px;
+	left:30px;
+	display:none;
+	position:absolute;
+	z-index: 20;
+}
+
+#slide8Grafica{
+	background:url("../images/slide8Grafica.jpg");
+	width:737px;
+	height:464px;
+	position: absolute;
+	top:165px;
+	left:290px;
+	display:none;
+}
+
+#slide8barraA{
+	border-top:#FFF solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#FFF solid 1px;
+	box-shadow: 0 0 5px #888;
+	width:88px;
+	height:0px;
+	position:absolute;
+	left:336px;
+	bottom:79px;
+	z-index:10;
+	background:#331263 url("../images/barraAbg.jpg") repeat-x 0 50%;
+}
+
+#slide8barraAcomp{
+	height:0px; /*119px*/
+	width:80px;
+	background:#58585a;
+	border-top:#58585a solid 1px;
+	border-left:#58585a solid 1px;
+	border-right:#58585a solid 1px;
+	position: absolute;
+	left:494px;
+	bottom:79px;
+	z-index: 5;
+}
+
+#slide8barraA img{
+	position:absolute;
+	top:-35px;
+	left:50%;
+	margin-left:-29px;
+	display:none;
+}
+
+#slide8barraAcomp img{
+	position:absolute;
+	top:-25px;
+	left:50%;
+	margin-left:-24px;
+	display:none;
+}
+/*Fin Slide 8*/
+
+/*Slide 9*/
+#slide9Logo{
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+#slide9Texto{
+	top:230px;
+	left:0px;
+	position:absolute;
+	z-index: 20;
+	}
+
+ #slide9Texto img{
+ 	display: none;
+ 	position:absolute;
+ 	top:-30px;
+ }
+
+#slide9Grafica{
+	background:url("../images/slide9Grafica.jpg");
+	width:612px;
+	height:520px;
+	position: absolute;
+	top:130px;
+	left:415px;
+	display:none;
+}
+
+#slide9barraA{
+	border-top:#FFF solid 1px;
+	border-left:#FFF solid 1px;
+	border-right:#FFF solid 1px;
+	box-shadow: 0 0 5px #888;
+	width:88px;
+	height:0px;
+	position:absolute;
+	left:185px;
+	bottom:102px;
+	z-index:10;
+	background:#331263 url("../images/barraAbg.jpg") repeat-x 0 50%;
+}
+
+#slide9barraAcomp{
+	height:0px; /*119px*/
+	width:80px;
+	background:#58585a;
+	border-top:#58585a solid 1px;
+	border-left:#58585a solid 1px;
+	border-right:#58585a solid 1px;
+	position: absolute;
+	left:354px;
+	bottom:102px;
+	z-index: 5;
+}
+
+#slide9barraA img{
+	position:absolute;
+	top:-35px;
+	left:50%;
+	margin-left:-29px;
+	display:none;
+}
+
+#slide9barraAcomp img{
+	position:absolute;
+	top:-25px;
+	left:50%;
+	margin-left:-24px;
+	display:none;
+}
+/*Fin Slide 9*/

@@ -10,9 +10,6 @@
 		840BBB101509E09800B681A7 /* SlideProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BBB0F1509E09800B681A7 /* SlideProvider.m */; };
 		840BBB171509E42400B681A7 /* WebContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BBB161509E42400B681A7 /* WebContentView.m */; };
 		840BBB26150AFAA900B681A7 /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BBB25150AFAA900B681A7 /* AnnotationView.m */; };
-		849891F2152151200038DAA7 /* ONSET and OFFSET study, 2009.png in Resources */ = {isa = PBXBuildFile; fileRef = 849891EF152151200038DAA7 /* ONSET and OFFSET study, 2009.png */; };
-		849891F3152151200038DAA7 /* PLATO trial, 2009.png in Resources */ = {isa = PBXBuildFile; fileRef = 849891F0152151200038DAA7 /* PLATO trial, 2009.png */; };
-		849891F4152151200038DAA7 /* Wallentin Spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = 849891F1152151200038DAA7 /* Wallentin Spanish.png */; };
 		84C9DF8A15009F6700E16B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C9DF8915009F6700E16B3B /* UIKit.framework */; };
 		84C9DF8C15009F6700E16B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C9DF8B15009F6700E16B3B /* Foundation.framework */; };
 		84C9DF8E15009F6700E16B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C9DF8D15009F6700E16B3B /* CoreGraphics.framework */; };
@@ -30,9 +27,6 @@
 		84C9E01C1500A01000E16B3B /* ToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9DFEF1500A01000E16B3B /* ToolbarView.m */; };
 		84E05FB9151298FC009FE5AF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E05FB8151298FC009FE5AF /* iCarousel.m */; };
 		84E05FBC151299AD009FE5AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E05FBB151299AD009FE5AF /* QuartzCore.framework */; };
-		84E05FC115129B3B009FE5AF /* ONSET and OFFSET study, 2009.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FBE15129B3B009FE5AF /* ONSET and OFFSET study, 2009.pdf */; };
-		84E05FC215129B3B009FE5AF /* PLATO trial, 2009.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FBF15129B3B009FE5AF /* PLATO trial, 2009.pdf */; };
-		84E05FC315129B3B009FE5AF /* Wallentin Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FC015129B3B009FE5AF /* Wallentin Spanish.pdf */; };
 		84E05FE215129FC1009FE5AF /* barra_herramientas.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FC515129FC1009FE5AF /* barra_herramientas.png */; };
 		84E05FE315129FC1009FE5AF /* barra_menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FC615129FC1009FE5AF /* barra_menu.jpg */; };
 		84E05FE415129FC1009FE5AF /* btn_apertura.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E05FC715129FC1009FE5AF /* btn_apertura.png */; };
@@ -67,6 +61,8 @@
 		84E06023151319A8009FE5AF /* Viewport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E06022151319A8009FE5AF /* Viewport.m */; };
 		84E64C27151D1388001F7E0A /* ThumbnailStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E64C26151D1388001F7E0A /* ThumbnailStackView.m */; };
 		84E64C2A151D141B001F7E0A /* SlideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E64C29151D141B001F7E0A /* SlideController.m */; };
+		AA18A16B1536B16C00E903F5 /* IPP_Nexium_MUPS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AA18A1691536B16C00E903F5 /* IPP_Nexium_MUPS.pdf */; };
+		AA18A16C1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AA18A16A1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf */; };
 		AA3A3D92152AD235005EDBF5 /* slide2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3A3D86152AD235005EDBF5 /* slide2.jpg */; };
 		AA3A3D93152AD235005EDBF5 /* slide3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3A3D87152AD235005EDBF5 /* slide3.jpg */; };
 		AA3A3D94152AD235005EDBF5 /* slide4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3A3D88152AD235005EDBF5 /* slide4.jpg */; };
@@ -103,9 +99,6 @@
 		840BBB24150AFAA900B681A7 /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
 		840BBB25150AFAA900B681A7 /* AnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationView.m; sourceTree = "<group>"; };
 		840BBB2A150C675D00B681A7 /* ContentDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentDisplayDelegate.h; path = Protocols/ContentDisplayDelegate.h; sourceTree = "<group>"; };
-		849891EF152151200038DAA7 /* ONSET and OFFSET study, 2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ONSET and OFFSET study, 2009.png"; sourceTree = "<group>"; };
-		849891F0152151200038DAA7 /* PLATO trial, 2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLATO trial, 2009.png"; sourceTree = "<group>"; };
-		849891F1152151200038DAA7 /* Wallentin Spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallentin Spanish.png"; sourceTree = "<group>"; };
 		84C9DF8515009F6700E16B3B /* Nexium Mups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nexium Mups.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9DF8915009F6700E16B3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84C9DF8B15009F6700E16B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,9 +126,6 @@
 		84E05FB7151298FC009FE5AF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		84E05FB8151298FC009FE5AF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		84E05FBB151299AD009FE5AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		84E05FBE15129B3B009FE5AF /* ONSET and OFFSET study, 2009.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ONSET and OFFSET study, 2009.pdf"; sourceTree = "<group>"; };
-		84E05FBF15129B3B009FE5AF /* PLATO trial, 2009.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PLATO trial, 2009.pdf"; sourceTree = "<group>"; };
-		84E05FC015129B3B009FE5AF /* Wallentin Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Wallentin Spanish.pdf"; sourceTree = "<group>"; };
 		84E05FC515129FC1009FE5AF /* barra_herramientas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barra_herramientas.png; sourceTree = "<group>"; };
 		84E05FC615129FC1009FE5AF /* barra_menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barra_menu.jpg; sourceTree = "<group>"; };
 		84E05FC715129FC1009FE5AF /* btn_apertura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_apertura.png; sourceTree = "<group>"; };
@@ -177,6 +167,8 @@
 		84E64C26151D1388001F7E0A /* ThumbnailStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailStackView.m; sourceTree = "<group>"; };
 		84E64C28151D141B001F7E0A /* SlideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideController.h; sourceTree = "<group>"; };
 		84E64C29151D141B001F7E0A /* SlideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideController.m; sourceTree = "<group>"; };
+		AA18A1691536B16C00E903F5 /* IPP_Nexium_MUPS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IPP_Nexium_MUPS.pdf; sourceTree = "<group>"; };
+		AA18A16A1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Referencias_Nexium_MUPS.pdf; sourceTree = "<group>"; };
 		AA3A3D86152AD235005EDBF5 /* slide2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide2.jpg; sourceTree = "<group>"; };
 		AA3A3D87152AD235005EDBF5 /* slide3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide3.jpg; sourceTree = "<group>"; };
 		AA3A3D88152AD235005EDBF5 /* slide4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide4.jpg; sourceTree = "<group>"; };
@@ -241,9 +233,6 @@
 		849891EE152151200038DAA7 /* previews */ = {
 			isa = PBXGroup;
 			children = (
-				849891EF152151200038DAA7 /* ONSET and OFFSET study, 2009.png */,
-				849891F0152151200038DAA7 /* PLATO trial, 2009.png */,
-				849891F1152151200038DAA7 /* Wallentin Spanish.png */,
 			);
 			path = previews;
 			sourceTree = "<group>";
@@ -419,10 +408,9 @@
 		84E05FBD15129B3B009FE5AF /* pdfs */ = {
 			isa = PBXGroup;
 			children = (
+				AA18A1691536B16C00E903F5 /* IPP_Nexium_MUPS.pdf */,
+				AA18A16A1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf */,
 				849891EE152151200038DAA7 /* previews */,
-				84E05FBE15129B3B009FE5AF /* ONSET and OFFSET study, 2009.pdf */,
-				84E05FBF15129B3B009FE5AF /* PLATO trial, 2009.pdf */,
-				84E05FC015129B3B009FE5AF /* Wallentin Spanish.pdf */,
 			);
 			path = pdfs;
 			sourceTree = "<group>";
@@ -536,9 +524,6 @@
 			files = (
 				AAB7DBF0152D13B7003450D8 /* slides in Resources */,
 				84C9DF9415009F6700E16B3B /* InfoPlist.strings in Resources */,
-				84E05FC115129B3B009FE5AF /* ONSET and OFFSET study, 2009.pdf in Resources */,
-				84E05FC215129B3B009FE5AF /* PLATO trial, 2009.pdf in Resources */,
-				84E05FC315129B3B009FE5AF /* Wallentin Spanish.pdf in Resources */,
 				84E05FE215129FC1009FE5AF /* barra_herramientas.png in Resources */,
 				84E05FE315129FC1009FE5AF /* barra_menu.jpg in Resources */,
 				84E05FE415129FC1009FE5AF /* btn_apertura.png in Resources */,
@@ -568,9 +553,6 @@
 				84E05FFC15129FC1009FE5AF /* over_menu5.png in Resources */,
 				84E05FFD15129FC1009FE5AF /* over_pluma.png in Resources */,
 				84E05FFE15129FC1009FE5AF /* pluma.png in Resources */,
-				849891F2152151200038DAA7 /* ONSET and OFFSET study, 2009.png in Resources */,
-				849891F3152151200038DAA7 /* PLATO trial, 2009.png in Resources */,
-				849891F4152151200038DAA7 /* Wallentin Spanish.png in Resources */,
 				AA3A3D92152AD235005EDBF5 /* slide2.jpg in Resources */,
 				AA3A3D93152AD235005EDBF5 /* slide3.jpg in Resources */,
 				AA3A3D94152AD235005EDBF5 /* slide4.jpg in Resources */,
@@ -583,6 +565,8 @@
 				AA3A3D9B152AD235005EDBF5 /* slide11.jpg in Resources */,
 				AA69E39E152C1D8700032906 /* btn_referencias.png in Resources */,
 				AAB7DBF7152D1A4B003450D8 /* slide1.jpg in Resources */,
+				AA18A16B1536B16C00E903F5 /* IPP_Nexium_MUPS.pdf in Resources */,
+				AA18A16C1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

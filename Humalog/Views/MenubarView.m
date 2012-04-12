@@ -97,7 +97,7 @@
     for (UIButton *buttons in sectionButtons)
         buttons.selected = NO;
         
-    //button.selected = YES;
+    button.selected = YES;
     [self.delegate menubarViewDidSelectCategoryButton:button withIndex:[sectionButtons indexOfObject:button]];
 }
 

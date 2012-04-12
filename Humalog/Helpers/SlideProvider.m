@@ -64,6 +64,16 @@
     return webContentView;
 }
 
+- (UIView<ContentControlProtocol> *)viewForPDF:(NSString *)pdf
+{
+    
+    //UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 10, 200, 200)];
+    NSString *path = [[NSBundle mainBundle] pathForResource:pdf ofType:@"pdf"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    [webContentView loadRequest:[NSURLRequest requestWithURL:url]];
+    return webContentView;
+}
+
 - (UIImageView *)previewForDocumentAtIndex:(NSUInteger)index
 {
     NSString *fileName = [[@"slide" stringByAppendingString:[NSNumber numberWithUnsignedInt:index + 1].stringValue] stringByAppendingString:@".jpg"];

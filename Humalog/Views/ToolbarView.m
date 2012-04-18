@@ -17,6 +17,7 @@
     NSMutableArray *toolButtons;
     
     NSArray *navActions;
+    NSArray *miniActions;
     NSArray *toolActions;
     
     CGRect hiddenArea;
@@ -70,9 +71,14 @@
         miniButtons = [NSMutableArray array];
         
         NSArray *miniOptions = [NSArray arrayWithObjects:
-                             @"btn_minis_izq.png",
-                             @"btn_minis_abajo.png",
-                             nil];
+                                @"btn_minis_izq.png",
+                                @"btn_minis_abajo.png",
+                                nil];
+        
+        miniActions = [NSArray arrayWithObjects:
+                       [NSValue valueWithPointer:@selector(toolbarViewDidPressThumbnailsLeft)],
+                       [NSValue valueWithPointer:@selector(toolbarViewDidPressThumbnailsBottom)],
+                       nil];
         
         id miniLayout = [GridLayout gridWithFrame:CGRectMake(196 + 10, 0, 120, self.frame.size.height) numRows:1 numCols:[miniOptions count]];
         i = 0;
@@ -85,7 +91,6 @@
             button.frame = CGRectIntegral(button.frame);
             button.enabled = NO;
             [button setImage:normalImage forState:UIControlStateNormal];
-            [button setImage:selectedImage forState:UIControlStateHighlighted];
             [button setImage:selectedImage forState:UIControlStateSelected];
             [self addSubview:button];
             [miniButtons addObject:button];
@@ -117,7 +122,6 @@
             button.center = [v CGPointValue];
             button.frame = CGRectIntegral(button.frame);
             [button setImage:normalImage forState:UIControlStateNormal];
-//            [button setImage:selectedImage forState:UIControlStateHighlighted];
             [button setImage:selectedImage forState:UIControlStateSelected];
             
             [button addTarget:self
@@ -154,9 +158,9 @@
         }
     }
     
-    // Update tools
-    buttons = toolButtons;
-    actions = toolActions;
+    // Update thumbnail
+    buttons = miniButtons;
+    actions = miniActions;
     for (UIButton *button in buttons) {
         if (self.delegate) {
             [button removeTarget:self.delegate
@@ -174,6 +178,26 @@
         }
     }
     
+    // Update tools
+    //    buttons = toolButtons;
+    //    actions = toolActions;
+    //    for (UIButton *button in buttons) {
+    //        if (self.delegate) {
+    //            [button removeTarget:self.delegate
+    //                          action:NULL
+    //                forControlEvents:UIControlEventTouchDown];
+    //        }
+    //        SEL action = [[actions objectAtIndex:[buttons indexOfObject:button]] pointerValue];
+    //        if ([newDelegate respondsToSelector:action]) {
+    //            [button addTarget:newDelegate
+    //                       action:action
+    //             forControlEvents:UIControlEventTouchDown];
+    //            button.enabled = YES;
+    //        } else {
+    //            button.enabled = NO;
+    //        }
+    //    }
+    
     [(NSObject *)delegate removeObserver:self
                               forKeyPath:@"navigationPosition"];
     
@@ -184,7 +208,7 @@
     
     delegate = newDelegate;
 }
-     
+
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
@@ -192,7 +216,7 @@
 {
     if (![keyPath isEqualToString:@"navigationPosition"])
         return;
-
+    
     enum NavigationPosition navigationPositionValue = [[change objectForKey:NSKeyValueChangeNewKey] intValue];
     
     UIButton *prevButton = [navButtons objectAtIndex:0];
@@ -240,6 +264,7 @@
         i.selected = NO;
     
     button.selected = YES;
+    [self.delegate performSelector:[[toolActions objectAtIndex:[toolButtons indexOfObject:button]] pointerValue]];
 }
 
 - (void)hide
@@ -277,19 +302,19 @@
 
 - (void)toggle
 {
-   if (self.hidden)
-       [self show];
+    if (self.hidden)
+        [self show];
     
     [self hide];
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect
+ {
+ // Drawing code
+ }
+ */
 
 @end

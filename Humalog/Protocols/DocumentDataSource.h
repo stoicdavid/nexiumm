@@ -13,6 +13,7 @@
 - (NSUInteger)numberOfDocuments;
 - (UIView<ContentControlProtocol> *)viewForDocumentAtIndex:(NSUInteger)index;
 @optional
+- (NSString *)titleForDocumentAtIndex:(NSUInteger)index;
 - (UIView<ContentControlProtocol> *)viewForPDF:(NSString *)pdf;
 - (UIImageView *)previewForDocumentAtIndex:(NSUInteger)index;
 //- (NSArray *)categoryNames;

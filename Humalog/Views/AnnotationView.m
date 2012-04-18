@@ -43,7 +43,7 @@
                      forKeyPath:@"contentOffset"
                         options:NSKeyValueObservingOptionNew
                         context:NULL];
-                
+        
         [masterView addObserver:self
                      forKeyPath:@"contentSize"
                         options:NSKeyValueObservingOptionNew
@@ -109,7 +109,7 @@
     withStrokeColor:MARKER_COLOR
      andStrokeWidth:MARKER_STROKE_WIDTH
          withinRect:rect];
-
+    
     // Draw pen paths
     [self drawPaths:penPaths
     withStrokeColor:PEN_COLOR
@@ -140,18 +140,19 @@
     // Init
     if (!self.penPaths)
         self.penPaths = [NSMutableArray array];
-   
+    
     if (!self.markerPaths)
         self.markerPaths = [NSMutableArray array];
-
+    
     creatingPathOfType = pathType;
     self.userInteractionEnabled = YES;
 }
 
 - (void)finishDrawing
 {
-    creatingPathOfType = PathTypeNone;
     self.userInteractionEnabled = NO;
+    creatingPathOfType = PathTypeNone;
+    
 }
 
 - (BOOL)lineSegmentsIntersectWithFirstPoint:(CGPoint)p1
@@ -177,7 +178,7 @@
 - (void)checkAndErasePath:(NSMutableArray *)paths
 {
     NSMutableArray *markedForDeletion = [NSMutableArray array];
-
+    
     // Need only check the last eraser path's line segment for intersection
     CGPoint eraserA = [[currentPath objectAtIndex:currentPath.count - 2] CGPointValue];
     CGPoint eraserB = [[currentPath lastObject] CGPointValue];

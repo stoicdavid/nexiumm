@@ -76,6 +76,7 @@
 		AA69E39E152C1D8700032906 /* btn_referencias.png in Resources */ = {isa = PBXBuildFile; fileRef = AA69E39D152C1D8700032906 /* btn_referencias.png */; };
 		AAB7DBF0152D13B7003450D8 /* slides in Resources */ = {isa = PBXBuildFile; fileRef = AAB7DBEF152D13B7003450D8 /* slides */; };
 		AAB7DBF7152D1A4B003450D8 /* slide1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAB7DBF6152D1A4A003450D8 /* slide1.jpg */; };
+		AAC8D835153FE78900FB9DD2 /* nexiummups.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAC8D834153FE78900FB9DD2 /* nexiummups.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,7 @@
 		AA69E39D152C1D8700032906 /* btn_referencias.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_referencias.png; sourceTree = "<group>"; };
 		AAB7DBEF152D13B7003450D8 /* slides */ = {isa = PBXFileReference; lastKnownFileType = folder; name = slides; path = Humalog/Resources/slides; sourceTree = "<group>"; };
 		AAB7DBF6152D1A4A003450D8 /* slide1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide1.jpg; sourceTree = "<group>"; };
+		AAC8D834153FE78900FB9DD2 /* nexiummups.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nexiummups.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 		84E05FC415129FC1009FE5AF /* toolbars */ = {
 			isa = PBXGroup;
 			children = (
+				AAC8D834153FE78900FB9DD2 /* nexiummups.jpg */,
 				84E05FC515129FC1009FE5AF /* barra_herramientas.png */,
 				84E05FC615129FC1009FE5AF /* barra_menu.jpg */,
 				84E05FC715129FC1009FE5AF /* btn_apertura.png */,
@@ -567,6 +570,7 @@
 				AAB7DBF7152D1A4B003450D8 /* slide1.jpg in Resources */,
 				AA18A16B1536B16C00E903F5 /* IPP_Nexium_MUPS.pdf in Resources */,
 				AA18A16C1536B16C00E903F5 /* Referencias_Nexium_MUPS.pdf in Resources */,
+				AAC8D835153FE78900FB9DD2 /* nexiummups.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

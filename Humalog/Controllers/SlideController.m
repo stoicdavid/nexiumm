@@ -12,7 +12,7 @@
 #import "Viewport.h"
 #import "ThumbnailStackView.h"
 
-#define FADE_DURATION 0.25
+#define FADE_DURATION 0.5
 #define STACK_OFFSET  -15
 
 @interface SlideController () {
@@ -52,8 +52,8 @@
     
     self.view = [[UIView alloc] initWithFrame:[Viewport contentArea]];
     self.view.opaque = YES;
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    //self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"nexiummups.jpg"]];
     contentView = [slideProvider viewForDocumentAtIndex:currentSlide];
     contentView.frame = self.view.frame;
     [self.view addSubview:contentView];
@@ -246,8 +246,14 @@
     title.textColor = [UIColor whiteColor];
     title.text = [slideProvider titleForDocumentAtIndex:[slideProvider rangeForCategoryIndex:currentCategoryIndex].location + index];
     title.font = [UIFont boldSystemFontOfSize:15.0];
-    CGSize titleSize = [title.text sizeWithFont:title.font];
+    CGSize titleSize = [title.text sizeWithFont:title.font
+                              constrainedToSize:CGSizeMake(150.0, 100.0)
+                                  lineBreakMode:UILineBreakModeWordWrap];
     title.frame = CGRectMake(0, 0, titleSize.width, titleSize.height); 
+    title.lineBreakMode= UILineBreakModeWordWrap;
+    title.numberOfLines=0;
+    [title sizeToFit];
+    [title setTextAlignment:UITextAlignmentCenter];
     title.center = CGPointMake(thumb.bounds.size.width / 2.0, title.center.y);
     
     // Container

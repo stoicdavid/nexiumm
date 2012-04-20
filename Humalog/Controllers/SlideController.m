@@ -252,20 +252,30 @@
     title.frame = CGRectMake(0, 0, titleSize.width, titleSize.height); 
     title.lineBreakMode= UILineBreakModeWordWrap;
     title.numberOfLines=0;
-    [title sizeToFit];
+    //[title sizeToFit];
     [title setTextAlignment:UITextAlignmentCenter];
     title.center = CGPointMake(thumb.bounds.size.width / 2.0, title.center.y);
+    
+    UILabel *separator = [[UILabel alloc] init];    
+    separator.frame = CGRectMake(0, 0, 150.0, 2.0); 
+    //separator.layer.backgroundColor = [UIColor redColor].CGColor;
+    
+    
     
     // Container
     UIView *v = [[UIView alloc] initWithFrame:thumb.frame];
     if (drawThumbnails) {
-        title.center = CGPointMake(title.center.x, thumb.bounds.size.height + 12.0);
+        title.center = CGPointMake(title.center.x, thumb.bounds.size.height + 20.0);
         [v addSubview:thumb];
+        //separator.center = CGPointMake(thumb.bounds.size.width / 2.0,105 );    
+    }else {
+        separator.center = CGPointMake(thumb.bounds.size.width / 2.0,title.bounds.size.height );
+        [v addSubview:separator];
     }
     [v addSubview:title];
+    
     return v;
 }
-
 - (CGFloat)carouselItemWidth:(iCarousel *)carousel
 {
     return 36.0 + (drawThumbnails? [slideProvider previewForDocumentAtIndex:0].bounds.size.height : 0.0);
